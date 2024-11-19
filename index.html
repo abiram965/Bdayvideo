@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Abirathna!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #61baff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff4a33;
+        }
+
+        .video-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 90%;
+            max-width: 1050px; /* Adjust the maximum size for the video */
+            height: 500px; /* Adjust the height of the YouTube video */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Abirathna! 🎉</h1>
+        <button class="btn" onclick="showVideo()">Surprise Me!</button>
+        <div class="video-container" id="videoContainer">
+            <!-- Replace with your YouTube embed link -->
+            <iframe id="youtubeVideo" src="https://www.youtube.com/embed/vwTfhPFdGcg" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function showVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            videoContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
